@@ -8,9 +8,352 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content= "index, follow">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  </head>
-  <body>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-mutate-approach="sync"></script>
 
+  </head>
+  <body class='container-fluid p-0 m-0 c-bg-dark'>
+    <header class='container-fluid sticky-top c-bg-secondary'>
+      <nav class='navbar navbar-expand-lg row-lg'>
+        <a class='navbar-brand col-lg-9 ms-lg-4 text-decoration-none text-white inter' href="#">Carlos Campos</a>
+        <button class='navbar-toggler col-2 text-white' type='button' data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+          <i class="fas fa-hamburger"></i>
+        </button>
+        <div class='collapse navbar-collapse offcanvas offcanvas-end c-bg-dark' id='offcanvasExample'>
+          <div class="offcanvas-header mt-3">
+            <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="inter text-white px-4">Carlos's portfolio</h5>
+          </div>
+          <div class="navbar-nav">
+            <a class='nav-link text-white inter text-decoration-none' aria-current='page' href="#">Portfolio</a>
+            <a class='nav-link text-white inter text-decoration-none' aria-current='page' href="#">About</a>
+            <a class='nav-link text-white inter text-decoration-none' aria-current='page' href="#">Contact</a>
+          </div>        
+        </div>
+        <div class='collapse navbar-collapse'>
+          <div class="navbar-nav">
+            <a class='nav-link text-white inter text-decoration-none' aria-current='page' href="#">Portfolio</a>
+            <a class='nav-link text-white inter text-decoration-none' aria-current='page' href="#">About</a>
+            <a class='nav-link text-white inter text-decoration-none' aria-current='page' href="#">Contact   <i class="far fa-envelope"></i></a>
+          </div>        
+        </div>
+      </nav>
+    </header>
+
+    <section class="container d-flex vh-100 p-0 m-0">
+      <div class="col-lg-10 d-flex flex-column flex-lg-row mt-lg-5">
+        <div class="col-lg-10 order-lg-last container container-lg-fluid pt-lg-5 mt-lg-5">
+          <h1 class='crete display-1 text-orange mt-5'>Hallo spaceboy, I'm Carlos </h1>
+          <h3 class='inter text-white fs-2'>I am a Software Developer</h3>        
+          <p class="inter text-white fs-lg-4 fs-6 pb-lg-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales elit a nisi interdum, et rhoncus lacus iaculis. Nunc ac erat luctus erat tincidunt congue at eu massa. Sed pulvinar lectus non tempor elementum.</p>
+        </div>
+        <ul class="order-lg-first nav flex-lg-column flex-row justify-content-center">
+          <li class='m-lg-5 m-4'><a class='text-decoration-none text-white fs-4' href=""><i class="fab fa-twitter"></i></a></li>
+          <li class='m-lg-5 m-4'><a class='text-decoration-none text-white fs-4' href=""><i class="fab fa-linkedin-in"></i></a></li>
+          <li class='m-lg-5 m-4'><a class='text-decoration-none text-white fs-4' href=""><i class="fab fa-github"></i></a></li>
+        </ul>          
+      </div>
+      <img class='position-absolute d-none d-lg-block p-0 h-75 end-0' src="assets/images/Illustration-header.svg" alt="">
+      
+      <img class='position-absolute h-50 top-50 p-0 end-0 d-lg-none' src="assets/images/Group.svg" alt="">
+      
+    </section>
+
+    <section class="bg-white">
+      <div class="container">        
+        <div class="row px-auto justify-content-center">
+
+          <h2 class="display-3 col col-lg-9 pt-5">My Recent Works</h2>
+          <div class="col-12 d-flex flex-column flex-lg-row justify-content-center">
+            <div class="col col-lg-5 pt-5">
+              <img class='img-fluid' src="assets/images/charityverse_screenshot.png" alt="">
+            </div>
+            <div class="col col-lg-4 pt-5 ps-lg-4">
+              <h3 class="crete">Charityverse</h3>
+              <p class="crete">Site similar to Snapscan an app for grouping payments by goal with your family/friends, which allows users to create charity events and add them to a group.</p>
+              <ul class="nav m-2">
+                <li class="nav-item btn btn-outline-secondary m-2 inter">html</li>
+                <li class="nav-item btn btn-outline-secondary m-2 inter">bootstrap</li>
+                <li class="nav-item btn btn-outline-secondary m-2 inter">ruby</li>
+              </ul>
+              <button type="button" class="btn c-bg-orange text-white m-3 inter" data-bs-toggle="modal" data-bs-target="#charityverse">
+                See project
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="charityverse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header container-fluid">
+                      <div class="row">
+                        <div class="col-auto">
+                          <h5 class="modal-title crete display-5" id="exampleModalLabel">Charityverse</h5>                         
+                          <ul class="nav m-2">
+                            <li class="nav-item btn btn-outline-secondary m-2 inter">html</li>
+                            <li class="nav-item btn btn-outline-secondary m-2 inter">bootstrap</li>
+                            <li class="nav-item btn btn-outline-secondary m-2 inter">ruby</li>
+                          </ul>    
+                        </div>                    
+                      </div>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="d-flex flex-column flex-lg-row">
+                        <div class="col-12 col-lg-7">
+                          <img class="img-fluid" src="assets/images/charityverse_screenshot.png" alt="">
+                        </div>
+                        <div class="col-12 col-lg-5">
+                          <p class="mx-3 inter fs-4">Site similar to Snapscan an app for grouping payments by goal with your family/friends, which allows users to create charity events and add them to a group.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="https://young-castle-14988.herokuapp.com/" target="_blank"><button type="button" class="btn c-bg-orange text-white">See Live <i class="fas fa-external-link-alt"></i></button></a>
+                      <a href="https://github.com/sjcco/charityverse" target="_blank"><button type="button" class="btn c-bg-orange text-white">See Source <i class="fab fa-github"></i></button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="projects d-flex flex-column flex-lg-row pb-5 mt-5 mb-5">
+          <div id="bati-events" class="project col-auto col-lg-4 mt-2 mx-lg-2">
+            <div class="space"></div>
+            <h3 class="text-center text-white">Bati-Events</h3>
+            <ul class='hide-nav nav my-2 justify-content-center'>
+              <li class="nav-item btn btn-secondary m-2 inter">html</li>
+              <li class="nav-item btn btn-secondary m-2 inter">bootstrap</li>
+              <li class="nav-item btn btn-secondary m-2 inter">ruby</li>
+            </ul>            
+            <div class="hide gap-2">
+              <button type="button" class="border border-orange c-bg-orange text-white py-2" data-bs-toggle="modal" data-bs-target="#project1">
+                See project
+              </button>
+              
+            </div>
+          </div>
+          <div id="twitter-clone" class="project col-auto col-lg-4 mt-5 mx-lg-2 mt-lg-2">
+            <div class="space"></div>
+            <h3 class="text-center text-white">Twitter clone</h3>
+            <ul class='hide-nav nav my-2 justify-content-center'>
+              <li class="nav-item btn btn-secondary m-2 inter">html</li>
+              <li class="nav-item btn btn-secondary m-2 inter">bulma</li>
+              <li class="nav-item btn btn-secondary m-2 inter">ruby</li>
+            </ul>            
+            <div class="hide gap-2">
+              <button type="button" class="border border-orange c-bg-orange text-white py-2" data-bs-toggle="modal" data-bs-target="#project2">
+                See project
+              </button>
+            </div>
+          </div>
+          <div id="social-site" class="project col-auto col-lg-4 mt-5 mx-lg-2 mt-lg-2">
+            <div class="space"></div>
+            <h3 class="text-center text-white">Social Site</h3>
+            <ul class='hide-nav nav my-2 justify-content-center'>
+              <li class="nav-item btn btn-secondary m-2 inter">html</li>
+              <li class="nav-item btn btn-secondary m-2 inter">bootstrap</li>
+              <li class="nav-item btn btn-secondary m-2 inter">ruby</li>
+            </ul>            
+            <div class="hide gap-2">
+              <button type="button" class="border border-orange c-bg-orange text-white py-2" data-bs-toggle="modal" data-bs-target="#project3">
+                See project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid d-flex flex-column p-0 m-0">
+      <div class="d-flex flex-column flex-lg-row px-0 mx-0 ms-lg-4 mb-5 pb-5">
+        <div class="col col-lg-7 m-3 m-lg-5 p-lg-5">
+          <h2 class="crete text-orange display-3">About me</h2>
+          <p class="text-white inter fs-4 fs-lg-2">Hello! My name is Carlos and I'm a full-stack development student currently enrolled in a remote software development school that uses pair programming and real-world projects to teach development.</p>
+        </div>
+        <div class="col px-0 pb-5 mx-0 my-5 d-lg-flex d-none justify-content-end">
+          <img class='img-fluid' src="assets/images/illustration-about me.svg" alt="">
+        </div>
+      </div>
+      <div class="d-flex flex-row justify-content-center my-5">
+        <div class="col-10 d-flex flex-column flex-lg-row border-top border-light justify-content-center text-center">
+          <div class="col-12 col-lg-4 mt-lg-5">
+            <h3 class="crete fs-1 text-orange mx-auto">Languages</h3>
+            <ul class="list-unstyled text-white">
+              <li class="fs-2">Javascript</li>
+              <li class="fs-2">Ruby</li>
+              <li class="fs-2">Html</li>
+              <li class="fs-2">Css</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 mt-lg-5">
+            <h3 class="crete fs-1 text-orange">Frameworks</h3>
+            <ul class="list-unstyled text-white">
+              <li class="fs-2">bootstrap</li>
+              <li class="fs-2">Ruby on Rails</li>
+              <li class="fs-2">RSPec</li>
+              <li class="fs-2">Capybara</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 mt-lg-5">
+            <h3 class="crete fs-1 text-orange">Skills</h3>
+            <ul class="list-unstyled text-white">
+              <li class="fs-2">Github</li>
+              <li class="fs-2">Codepen</li>
+              <li class="fs-2">Gitlab</li>
+              <li class="fs-2">Terminal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white container-fluid pt-5">
+      <div class="container d-flex flex-column flex-lg-row">
+        <div class="col col-lg-4">
+          <p class="inter fw-bold fs-2 me-3">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch</p>
+        </div>
+        <div class="col col-lg-8">
+          <form class="mb-5">
+            <div class="d-flex flex-column flex-lg-row">
+              <div class="col-12 col-lg-6 form-floating mb-3">
+                <input type="text" class="form-control border-top-0 border-start-0 border-end-0" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">First Name</label>
+              </div>
+              <div class="col-12 col-lg-5 form-floating ms-lg-4 mb-3">
+                <input type="text" class="form-control border-top-0 border-start-0 border-end-0" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="col-12 col-lg-7 form-floating mb-3">
+                  <input type="email" class="form-control border-top-0 border-start-0 border-end-0" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Message</label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn c-bg-orange text-white my-3">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header container-fluid">
+            <div class="row">
+              <div class="col-auto">
+                <h5 class="modal-title crete display-5" id="exampleModalLabel">Bati-Events</h5>                         
+                <ul class="nav m-2">
+                  <li class="nav-item btn btn-outline-secondary m-2 inter">html</li>
+                  <li class="nav-item btn btn-outline-secondary m-2 inter">bootstrap</li>
+                  <li class="nav-item btn btn-outline-secondary m-2 inter">ruby</li>
+                </ul>    
+              </div>                    
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-column flex-lg-row">
+              <div class="col-12 col-lg-7">
+                <img class="img-fluid" src="assets/images/Bati-Events.png" alt="">
+              </div>
+              <div class="col-12 col-lg-5">
+                <p class="mx-3 inter fs-4">Site similar to a private Eventbrite which allows users to create events and then manage user signups.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://thawing-waters-21952.herokuapp.com/" target="_blank"><button type="button" class="btn c-bg-orange text-white">See Live <i class="fas fa-external-link-alt"></i></button></a>
+            <a href="https://github.com/sjcco/private-events" target="_blank"><button type="button" class="btn c-bg-orange text-white">See Source <i class="fab fa-github"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project2" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header container-fluid">
+            <div class="row">
+              <div class="col-auto">
+                <h5 class="modal-title crete display-5" id="exampleModalLabel">Twitter-clone</h5>                         
+                <ul class="nav m-2">
+                  <li class="nav-item btn btn-outline-secondary m-2 inter">html</li>
+                  <li class="nav-item btn btn-outline-secondary m-2 inter">Bulma</li>
+                  <li class="nav-item btn btn-outline-secondary m-2 inter">ruby</li>
+                </ul>    
+              </div>                    
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-column flex-lg-row">
+              <div class="col-12 col-lg-7">
+                <img class="img-fluid" src="assets/images/twitter-clone.png" alt="">
+              </div>
+              <div class="col-12 col-lg-5">
+                <p class="mx-3 inter fs-4">A clone of twitter where users can see each other tweets create new ones or edit existing tweets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://calm-taiga-01280.herokuapp.com/" target="_blank"><button type="button" class="btn c-bg-orange text-white">See Live <i class="fas fa-external-link-alt"></i></button></a>
+            <a href="https://github.com/sjcco/twitter-clone" target="_blank"><button type="button" class="btn c-bg-orange text-white">See Source <i class="fab fa-github"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project3" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header container-fluid">
+            <div class="row">
+              <div class="col-auto">
+                <h5 class="modal-title crete display-5" id="exampleModalLabel">Social Site</h5>                         
+                <ul class="nav m-2">
+                  <li class="nav-item btn btn-outline-secondary m-2 inter">html</li>
+                  <li class="nav-item btn btn-outline-secondary m-2 inter">bootstrap</li>
+                  <li class="nav-item btn btn-outline-secondary m-2 inter">ruby</li>
+                </ul>    
+              </div>                    
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-column flex-lg-row">
+              <div class="col-12 col-lg-7">
+                <img class="img-fluid" src="assets/images/social-site.png" alt="">
+              </div>
+              <div class="col-12 col-lg-5">
+                <p class="mx-3 inter fs-4">Yet Another Social site with friendships and commentable and likeable posts</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="https://dry-spire-84720.herokuapp.com/" target="_blank"><button type="button" class="btn c-bg-orange text-white">See Live <i class="fas fa-external-link-alt"></i></button></a>
+            <a href="https://github.com/sjcco/ror-social-scaffold" target="_blank"><button type="button" class="btn c-bg-orange text-white">See Source <i class="fab fa-github"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>

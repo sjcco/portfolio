@@ -1,0 +1,105 @@
+.c-bg-dark {
+  background-color: #1c1a18;
+}
+
+.c-bg-secondary {
+  background-color: #3e3c3c;
+}
+
+.c-bg-orange {
+  background-color: #f55800;
+}
+
+.crete {
+  font-family: 'Crete Round', serif;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-orange {
+  color: #f55800;
+}
+
+.border-orange {
+  border-color: #f55800!important;
+}
+
+.hide {
+  display: grid;
+}
+
+.space {  
+  height: calc(100% - 123px);
+}
+
+.project {
+  height: 400px;
+}
+
+#bati-events {  
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(68, 68, 68, 0.73)),
+  url('../images/Bati-Events.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#twitter-clone {  
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(68, 68, 68, 0.73)),
+  url('../images/twitter-clone.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#social-site {  
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(68, 68, 68, 0.73)),
+  url('../images/social-site.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .fs-lg-2{
+    font-size: calc(1.325rem + .9vw)!important;
+  }
+
+  .fs-lg-4 {
+    font-size: 1.5rem!important;
+  }
+
+  .space {
+    height: 60%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #bati-events:hover {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(68, 68, 68, 0)),
+    url('../images/Bati-Events.png');;
+  }
+
+  #twitter-clone:hover {  
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(68, 68, 68, 0)),
+    url('../images/twitter-clone.png');
+  }
+
+  #social-site:hover {  
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(68, 68, 68, 0)),
+    url('../images/social-site.png');
+  }
+
+  .project:hover .hide {
+    display: grid;
+  }
+
+  .project:hover .hide-nav {
+    display: none;
+  }
+
+  .project:hover .space {
+    height: calc(100% - 84px);
+  }
+}
